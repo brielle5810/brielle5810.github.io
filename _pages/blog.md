@@ -148,7 +148,7 @@ pagination:
         {% endif %}
       </p>
       <p class="post-tags">
-        <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}" aria-label="Published in {{ year }}>
+        <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}">
           <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
 
           {% if tags != "" %}
