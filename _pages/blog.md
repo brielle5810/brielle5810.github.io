@@ -85,7 +85,7 @@ pagination:
 
                     <p class="post-meta">
                       {{ read_time }} min read &nbsp; &middot; &nbsp;
-                      <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}">
+                      <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}" aria-label="Published in {{ year }}">
                         <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
                     </p>
                   </div>
@@ -129,14 +129,14 @@ pagination:
 {% endif %}
         <h3>
         {% if post.redirect == blank %}
-          <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }} aria-label="Read more about {{ post.title }}"</a>
+          <a class="post-title" href="{{ post.url | relative_url }}" aria-label="Read more about {{ post.title }}">{{ post.title }} </a>
         {% elsif post.redirect contains '://' %}
-          <a class="post-title" href="{{ post.redirect }}" target="_blank">{{ post.title }} aria-label="Read more about {{ post.title }}"</a>
+          <a class="post-title" href="{{ post.redirect }}" target="_blank" aria-label="Read more about {{ post.title }}">{{ post.title }} </a>
           <svg width="2rem" height="2rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
             <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
         {% else %}
-          <a class="post-title" href="{{ post.redirect | relative_url }}">{{ post.title }} aria-label="Read more about {{ post.title }}"</a>
+          <a class="post-title" href="{{ post.redirect | relative_url }}" aria-label="Read more about {{ post.title }}">{{ post.title }} </a>
         {% endif %}
       </h3>
       <p>{{ post.description }}</p>
