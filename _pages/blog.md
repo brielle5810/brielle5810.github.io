@@ -32,7 +32,7 @@ pagination:
 {% if site.display_tags or site.display_categories %}
 
   <div class="tag-category-list">
-    <ul class="p-0 m-0">
+    <ul class="list-unstyled m-0">
       {% for tag in site.display_tags %}
         <li>
           <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
