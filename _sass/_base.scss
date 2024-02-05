@@ -216,7 +216,7 @@ blockquote {
   font-size: 0.875rem;
 
   a {
-    color: inherit;
+    color: var(--global-theme-color); //BRIELLE S
 
     &:hover {
       color: var(--global-theme-color);
@@ -544,11 +544,11 @@ footer.sticky-bottom {
     }
 
     a {
-      color: black; //bs
+      color: var(--global-text-color);
       text-decoration: none;
 
       &:hover {
-        color: black; //bs plus
+        color: var(--global-theme-color);
       }
     }
 
