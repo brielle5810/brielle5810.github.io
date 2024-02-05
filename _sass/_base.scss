@@ -544,11 +544,11 @@ footer.sticky-bottom {
     }
 
     a {
-      color: var(--global-text-color);
+      color: black; //bs
       text-decoration: none;
 
       &:hover {
-        color: var(--global-theme-color);
+        color: black; //bs plus
       }
     }
 
@@ -859,7 +859,7 @@ html.transition *:after {
     padding-bottom: 1rem;
 
     a {
-      color: var(--global-text-color); //EDITED BRIELF
+      color: var(--global-text-color-light);
       text-decoration: none;
 
       &:hover {
