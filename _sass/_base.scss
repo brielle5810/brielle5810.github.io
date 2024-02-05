@@ -561,15 +561,19 @@ footer.sticky-bottom {
 .pagination {
   .page-item {
     .page-link {
-      color: black;
+      color: var(--global-text-color);
 
       &:hover {
-        color: black;
+        color: $black-color;
+      }
+
+      &.disabled {
+        color: var(--global-text-color); 
       }
     }
 
     &.active .page-link {
-      color: black;
+      color: $white-color;
       background-color: var(--global-theme-color);
 
       &:hover {
