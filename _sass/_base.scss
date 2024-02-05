@@ -570,10 +570,10 @@ footer.sticky-bottom {
 
     &.active .page-link {
       color: $white-color;
-      background-color: var(--global-theme-color);
+      background-color: black;
 
       &:hover {
-        background-color: var(--global-theme-color);
+        background-color: black;
       }
     }
   }
