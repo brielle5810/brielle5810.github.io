@@ -564,16 +564,16 @@ footer.sticky-bottom {
       color: black;
 
       &:hover {
-        color: $black-color;
+        color: black;
       }
     }
 
     &.active .page-link {
       color: black;
-      background-color: black;
+      background-color: var(--global-theme-color);
 
       &:hover {
-        background-color: black;
+        background-color: var(--global-theme-color);
       }
     }
   }
