@@ -566,10 +566,10 @@ footer.sticky-bottom {
       &:hover {
         color: $black-color;
       }
-     
-    }
-    &.aria-disabled .page-link {
-      color: red;
+      &:disabled {
+        color: var(--global-text-color);
+        pointer-events: none;
+      }
     }
 
     &.active .page-link {
