@@ -216,7 +216,7 @@ blockquote {
   font-size: 0.875rem;
 
   a {
-    color: var(--global-theme-color); //BRIELLE S
+    color: inherit;
 
     &:hover {
       color: var(--global-theme-color);
@@ -561,7 +561,7 @@ footer.sticky-bottom {
 .pagination {
   .page-item {
     .page-link {
-      color: var(--global-text-color);
+      color: black;
 
       &:hover {
         color: $black-color;
