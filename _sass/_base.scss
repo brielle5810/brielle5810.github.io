@@ -559,7 +559,6 @@ footer.sticky-bottom {
 }
 
 .pagination {
-  color: var(--global-text-color);
   .page-item {
     .page-link {
       color: var(--global-text-color);
@@ -578,6 +577,11 @@ footer.sticky-bottom {
       }
     }
   }
+}
+  
+.page-item.disabled .page-link {
+  color: var(--global-text-color) !important;
+  /* other styles... */
 }
 
 // Distill
