@@ -560,6 +560,14 @@ footer.sticky-bottom {
 
 .pagination {
   .page-item {
+    &:disabled {
+      color: var(--global-text-color);
+      pointer-events: none;
+    }
+    &.disabled {
+      color: var(--global-text-color);
+      pointer-events: none;
+    }
     .page-link {
       color: var(--global-text-color);
 
