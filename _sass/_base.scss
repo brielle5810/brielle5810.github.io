@@ -559,10 +559,6 @@ footer.sticky-bottom {
 }
 
 .pagination {
-  .page-item.disabled .page-link {
-    color: red !important;
-    /* other styles... */
-  }
   .page-item {
     .page-link {
       color: var(--global-text-color);
@@ -583,11 +579,6 @@ footer.sticky-bottom {
   }
 }
   
-.page-item.disabled .page-link {
-  color: red !important;
-  /* other styles... */
-}
-
 // Distill
 
 .distill {
