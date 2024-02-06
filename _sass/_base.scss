@@ -559,21 +559,13 @@ footer.sticky-bottom {
 }
 
 .pagination {
+  color: var(--global-text-color);
   .page-item {
-
-    &.aria-disabled {
-      color: var(--global-text-color);
-      pointer-events: none;
-    }
     .page-link {
       color: var(--global-text-color);
 
       &:hover {
         color: $black-color;
-      }
-      &:disabled {
-        color: var(--global-text-color);
-        pointer-events: none;
       }
     }
 
